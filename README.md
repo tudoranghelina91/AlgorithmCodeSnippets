@@ -9,7 +9,7 @@
 </p>
 
 <p>
-  This string contains instructions on how the tree should be built. For example, the string <code>(A(B(-,E),C(F,-))</code> would instruct us to build the string like so:
+  This string contains instructions on how the tree should be built. For example, the string <code>(A(B(D,E),C(F,G))</code> would instruct us to build the string like so:
 </p>
 
 ![alt text](https://github.com/tudoranghelina91/AlgorithmCodeSnippets/blob/master/Binary%20Tree.png)
@@ -24,18 +24,7 @@
   </ul>
 </code>
 
-<p>Therefore, based on the aforementioned facts, the algorithm in simple steps would sound something like this</p>
-
-<code>
-  i = 0;  // Used to track the position in the string;
-  BEGIN READ TREE
-    IF (PATTERN STRING LENGTH = 1)  // The pattern string has only a single node (the root node)
-      RETURN NEW NODE;
-    ELSE
-      CREATE NODE(instructions[i])
-      i++;
-</code>
-
+<p>Based on the aforementioned facts, here is the code along with the comments</p>
 <code>
         // Reading Binary Tree From Parenthesis String
         
