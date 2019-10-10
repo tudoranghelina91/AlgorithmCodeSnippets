@@ -5,3 +5,6 @@
 ![alt text](https://github.com/tudoranghelina91/AlgorithmCodeSnippets/blob/master/Backtracking/nQueens.png)
 
 <p>As you can see, just as in chess, in order for the queens not to attack each other, two queens must not be on the same line, column or diagonal of the chess board.</p>
+
+<p>Before we take a look at the solution, let's recap how backtracking works</p>
+
