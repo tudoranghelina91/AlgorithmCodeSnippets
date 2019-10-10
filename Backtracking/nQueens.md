@@ -33,7 +33,7 @@
       {
         if (k == n) 
         {
-          PrintSolution()
+          PrintResult(int[] arr)
         }
         
         else
