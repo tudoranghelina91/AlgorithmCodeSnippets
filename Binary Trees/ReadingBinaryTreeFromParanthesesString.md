@@ -14,14 +14,12 @@
 ![alt text](https://github.com/tudoranghelina91/AlgorithmCodeSnippets/blob/master/Binary%20Trees/Binary%20Tree.png)
 
 <p>If we take a closer look at the image and string, we would notice that the input string will give us some hints on how to build the file</p>
-```
   <ul>
     <li>Any letter from the alphabet represents the value of a node</li>
     <li><b>(</b> indicates the insertion of children for the current node, left and right in that order</li>
     <li><b>,</b> indicates the insertion of the Right Node. The character before <b>,</b> is the left neighbor and the one after the right one</li>
     <li><b>)</b> indicates that there are no more children to insert</li>
   </ul>
-```
 
 ```C#
         // Reading Binary Tree From Parenthesis String
