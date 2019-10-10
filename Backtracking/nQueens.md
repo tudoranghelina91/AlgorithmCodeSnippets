@@ -77,6 +77,7 @@
   
   <p>Now that we have a way of filtering we need to add the previous function inside our Backtracking function</p>
   
+  
     ```C#
   
     static void Bkt(int k, int[] arr)
@@ -103,7 +104,9 @@
         }
       }
     }
-    
+   
+   
   ```
+  
   
 </ol>
