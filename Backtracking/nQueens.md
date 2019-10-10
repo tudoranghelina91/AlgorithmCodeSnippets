@@ -23,7 +23,7 @@
   <li>
     <h3>The Backtracking Function</h3>
   </li>
-  <p>The Backtracking function will search for every possible combination and will be used to output our result.</p>
+  <p>The Backtracking function will search for every possible combination and will be used to output our result once the result array is filled.</p>
   
   ```C#  
   
