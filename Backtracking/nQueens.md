@@ -29,8 +29,10 @@
   
     static void Bkt(int k, int[] arr)
     {
-      for (int i = 0; i < n; i++)
+      for (int i = 1; i <= 4; i++)
       {
+        // assign i to the current level of the result array
+        arr[k] = i;
         // If all levels of the result array are filled
         if (k == arr.Length) 
         {
@@ -57,7 +59,7 @@
   
   ```C#
   
-  static bool valid (int k, int[] arr)   // k - current level inside the result array
+  static bool Valid (int k, int[] arr)   // k - current level inside the result array
   {
     for (int i = 0; i < k; i++)
     {
@@ -71,6 +73,37 @@
   }
   
   
+  ```
+  
+  <p>Now that we have a way of filtering we need to add the previous function inside our Backtracking function</p>
+  
+    ```C#
+  
+    static void Bkt(int k, int[] arr)
+    {
+      // Skim through all the possible values and fill the current level
+      for (int i = 1; i <= 4; i++)
+      {
+        // if current level meets the condition
+        if (Valid(arr, k)
+        {
+          // if all the levels of the result array are filled
+          if (k == arr.Length) 
+          {
+            // Output the result
+            PrintResult(int[] arr);
+          }
+          
+          // Otherwise
+          else
+          {
+            // Fill the next level
+            Bkt(k+1, arr);
+          }
+        }
+      }
+    }
+    
   ```
   
 </ol>
