@@ -15,7 +15,7 @@
     
   ```C#
 
-    int[] arr = new int[4];
+    static int[] arr = new int[4];
 
   ```
     
@@ -27,7 +27,7 @@
   
   ```C#
   
-    public static void Bkt(int k, int[] arr)
+    static void Bkt(int k, int[] arr)
     {
       for (int i = 0; i < n; i++)
       {
@@ -52,6 +52,25 @@
   <li>
     <h3>The Valid Function</h3>
   </li>
-  <p>The Valid Function will check if the condition of the problem is met. Let's say, for example, that a solution is viable only and only if all layers of the result array have distinct values. The code above will display all permutations, not taking into account a condition, so... the output could be something like: <code>1111, 1232, 1234, 1313</code>
+  <p>The Valid Function will check if the condition of the problem is met. Let's say, for example, that a solution is viable only and only if all layers of the result array have distinct values. The code above will display all combinations of digits from 1 to 4 so the output will most certainly contain any of the following combination of digits: <code>1111, 1232, 1234, 1313</code></p>
+  <p>In order to avoid that and obtain only the combination of distinct digits, like <code>1234, 3142, 2134, etc.</code> we will have to filter the result by performing additional checks on the result array, and for that, we will use a valid function, which will check the current level of the result array if it contains a value already present in the array.</p>
+  
+  ```C#
+  
+  static bool valid (int k, int[] arr)   // k - current level inside the result array
+  {
+    for (int i = 0; i < k; i++)
+    {
+      if (arr[i] == arr[k])   // if one of the levels before the current level is equal to the value of the current level
+      {
+        return false;       // the value of the current doesn't meet the requirements of a valid output
+      }
+    }
+    
+    return true;      // otherwise, the value on the current level meets the requirements of a valid output
+  }
+  
+  
+  ```
   
 </ol>
