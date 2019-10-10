@@ -27,17 +27,21 @@
   
   ```C#
   
-    public static void Bkt(int k)
+    public static void Bkt(int k, int[] arr)
     {
       for (int i = 0; i < n; i++)
       {
-        if (k == n) 
+        // If all levels of the result array are filled
+        if (k == arr.Length) 
         {
+          // Output the result
           PrintResult(int[] arr)
         }
         
+        // Otherwise
         else
         {
+          // Fill the next level of the solution array
           Bkt(k+1);
         }
       }
