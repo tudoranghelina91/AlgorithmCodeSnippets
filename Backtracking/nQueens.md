@@ -25,17 +25,8 @@
   </li>
   <p>The Backtracking function will search for every possible combination and will be used to output our result once the result array is filled.</p>
   
-  ```C#  
+  ```C#
   
-    public void Print(int[] arr)
-    {
-      for (int i = 0; i < arr.Length; i++)
-      {
-        Console.Write(arr[i]);
-      }
-      Console.WriteLine();
-    }
-    
     public static void Bkt(int k)
     {
       for (int i = 0; i < n; i++)
