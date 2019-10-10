@@ -49,4 +49,9 @@
     
   ```
   
+  <li>
+    <h3>The Valid Function</h3>
+  </li>
+  <p>The Valid Function will check if the condition of the problem is met. Let's say, for example, that a solution is viable only and only if all layers of the result array have distinct values. The code above will display all permutations, not taking into account a condition, so... the output could be something like: <code>1111, 1232, 1234, 1313</code>
+  
 </ol>
