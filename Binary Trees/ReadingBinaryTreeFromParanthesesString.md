@@ -24,7 +24,7 @@
 </code>
 
 <p>Based on the aforementioned facts, here is the code along with the comments</p>
-<code>
+```C#
         // Reading Binary Tree From Parenthesis String
         
         // sample string
@@ -82,5 +82,4 @@
                 return root;
             }
         }
-
-</code>
+```
