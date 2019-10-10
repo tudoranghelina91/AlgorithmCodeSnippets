@@ -1,4 +1,3 @@
-#ReadingBinaryTreeFromParanthesesString
 <h1>Reading a binary tree from a string with parantheses</h1>
 
 <p>Let's assume that we have a binary tree structure presented with parantheses in the form of a pattern like the one below:
