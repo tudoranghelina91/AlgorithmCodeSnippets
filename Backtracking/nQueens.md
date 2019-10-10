@@ -76,10 +76,9 @@
   ```
   
   <p>Now that we have a way of filtering we need to add the previous function inside our Backtracking function</p>
-  
-  
+    
     ```C#
-  
+    
     static void Bkt(int k, int[] arr)
     {
       // Skim through all the possible values and fill the current level
@@ -105,8 +104,6 @@
       }
     }
    
-   
   ```
-  
   
 </ol>
