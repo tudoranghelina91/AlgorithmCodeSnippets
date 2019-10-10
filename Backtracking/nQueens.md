@@ -25,7 +25,7 @@
   </li>
   <p>The Backtracking function will search for every possible combination and will be used to output our result.</p>
   
-  ```C#
+  ```C#  
   
     public void Print(int[] arr)
     {
@@ -40,11 +40,18 @@
     {
       for (int i = 0; i < n; i++)
       {
-        if (k == n) {
+        if (k == n) 
+        {
           PrintSolution()
+        }
+        
+        else
+        {
+          Bkt(k+1);
         }
       }
     }
+    
   ```
   
 </ol>
