@@ -11,7 +11,7 @@
   This string contains instructions on how the tree should be built. For example, the string <code>(A(B(D,E),C(F,G))</code> would instruct us to build the string like so:
 </p>
 
-![alt text](https://github.com/tudoranghelina91/AlgorithmCodeSnippets/blob/master/Binary%20Tree.png)
+![alt text](https://github.com/tudoranghelina91/AlgorithmCodeSnippets/blob/master/Binary%20Trees/Binary%20Tree.png)
 
 <p>If we take a closer look at the image and string, we would notice that the input string will give us some hints on how to build the file</p>
 <code>
