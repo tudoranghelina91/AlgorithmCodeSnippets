@@ -1,0 +1,18 @@
+        static void DepthFirst(TNode root)
+        {
+            Stack<TNode> nodes = new Stack<TNode>();
+            nodes.Push(root);
+
+            while (nodes.Count != 0)
+            {
+                TNode n = nodes.Pop();
+                //if (n != null)
+                {
+                    if (n.Left != null)
+                        nodes.Push(n.Left);
+                    if (n.Right != null)
+                        nodes.Push(n.Right);
+                    Console.Write($"{n.Value} ");
+                }
+            }
+        }
